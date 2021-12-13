@@ -1,5 +1,5 @@
 CREATE TABLE `perfilcliente` (
-  `id_perfil_cliente` int NOT NULL,
+  `id_perfil_cliente` int NOT NULL AUTO_INCREMENT,
   `ultimo_interesse` varchar(30) DEFAULT NULL,
   `comentario` varchar(300) DEFAULT NULL,
   `avaliacao` varchar(1) DEFAULT NULL,

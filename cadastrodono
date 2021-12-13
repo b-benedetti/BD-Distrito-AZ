@@ -1,5 +1,5 @@
 CREATE TABLE `cadastrodono` (
-  `id_dono` int NOT NULL AUTO_INCREMENT,
+  `id_dono` int NOT NULL,
   `data_nasc_dono` varchar(10) DEFAULT NULL,
   `senha_dono` varchar(20) DEFAULT NULL,
   `cpf_dono` varchar(13) DEFAULT NULL,

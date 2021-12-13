@@ -1,5 +1,5 @@
 CREATE TABLE `cadastropessoa` (
-  `id_pessoa` int NOT NULL,
+  `id_pessoa` int NOT NULL AUTO_INCREMENT,
   `data_nasc` varchar(45) DEFAULT NULL,
   `senha` varchar(20) DEFAULT NULL,
   `cpf` varchar(13) DEFAULT NULL,

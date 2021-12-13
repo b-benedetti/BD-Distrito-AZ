@@ -1,0 +1,17 @@
+CREATE TABLE `cadastropessoa` (
+  `id_pessoa` int NOT NULL,
+  `data_nasc` varchar(45) DEFAULT NULL,
+  `senha` varchar(20) DEFAULT NULL,
+  `cpf` varchar(13) DEFAULT NULL,
+  `foto_perfil` varchar(100) DEFAULT NULL,
+  `email` varchar(100) DEFAULT NULL,
+  `nome_pessoa` varchar(50) DEFAULT NULL,
+  `end_complemento` varchar(15) DEFAULT NULL,
+  `end_bairro` varchar(50) DEFAULT NULL,
+  `end_via` varchar(10) DEFAULT NULL,
+  `end_cep` varchar(10) DEFAULT NULL,
+  `end_numero` varchar(5) DEFAULT NULL,
+  PRIMARY KEY (`id_pessoa`),
+  UNIQUE KEY `cpf_UNIQUE` (`cpf`),
+  UNIQUE KEY `email_UNIQUE` (`email`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci

@@ -1,0 +1,14 @@
+CREATE TABLE `sugestao` (
+  `idsugestao` int NOT NULL,
+  `email_sug` varchar(100) DEFAULT NULL,
+  `nome_completo` varchar(100) DEFAULT NULL,
+  `celular_sug` varchar(15) DEFAULT NULL,
+  `descricao_sug` varchar(500) DEFAULT NULL,
+  `ass_feedback` varchar(8) DEFAULT NULL,
+  `ass_problema_acesso` varchar(20) DEFAULT NULL,
+  `ass_outro` varchar(5) DEFAULT NULL,
+  PRIMARY KEY (`idsugestao`),
+  CONSTRAINT `id_cadastro_dono_` FOREIGN KEY (`idsugestao`) REFERENCES `cadastrodono` (`id_dono`),
+  CONSTRAINT `id_cadastro_empresa__` FOREIGN KEY (`idsugestao`) REFERENCES `cadastroempresa` (`id_empresa`),
+  CONSTRAINT `id_cadastro_pessoa_` FOREIGN KEY (`idsugestao`) REFERENCES `cadastropessoa` (`id_pessoa`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci

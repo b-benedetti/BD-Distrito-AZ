@@ -1,0 +1,17 @@
+CREATE TABLE `cadastrodono` (
+  `id_dono` int NOT NULL,
+  `data_nasc_dono` varchar(10) DEFAULT NULL,
+  `senha_dono` varchar(20) DEFAULT NULL,
+  `cpf_dono` varchar(13) DEFAULT NULL,
+  `foto_perfil_dono` varchar(100) DEFAULT NULL,
+  `email_dono` varchar(100) DEFAULT NULL,
+  `nome_dono` varchar(50) DEFAULT NULL,
+  `end_dono_complemento` varchar(15) DEFAULT NULL,
+  `end_dono_bairro` varchar(50) DEFAULT NULL,
+  `end_dono_via` varchar(10) DEFAULT NULL,
+  `end_dono_cep` varchar(10) DEFAULT NULL,
+  `end_dono_numero` varchar(5) DEFAULT NULL,
+  PRIMARY KEY (`id_dono`),
+  UNIQUE KEY `cpf_dono_UNIQUE` (`cpf_dono`),
+  UNIQUE KEY `email_dono_UNIQUE` (`email_dono`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci

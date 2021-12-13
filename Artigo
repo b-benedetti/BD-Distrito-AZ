@@ -1,0 +1,7 @@
+CREATE TABLE `artigo` (
+  `idartigo` int NOT NULL,
+  `titulo_artigo` varchar(50) DEFAULT NULL,
+  `categoria` varchar(20) DEFAULT NULL,
+  `desenvolvimento_art` varchar(5000) DEFAULT NULL,
+  PRIMARY KEY (`idartigo`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci

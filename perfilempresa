@@ -1,0 +1,9 @@
+CREATE TABLE `perfilempresa` (
+  `idperfilempresa` int NOT NULL AUTO_INCREMENT,
+  `num_visita` varchar(15) DEFAULT NULL,
+  `prod_disponivel` varchar(50) DEFAULT NULL,
+  `avaliacao` varchar(1) DEFAULT NULL,
+  `comentario` varchar(300) DEFAULT NULL,
+  `msg_cliente` varchar(5) DEFAULT NULL,
+  PRIMARY KEY (`idperfilempresa`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci

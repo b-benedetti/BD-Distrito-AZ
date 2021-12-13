@@ -1,5 +1,5 @@
 CREATE TABLE `telefonepessoa` (
-  `id_telefone_pessoa` int NOT NULL,
+  `id_telefone_pessoa` int NOT NULL AUTO_INCREMENT,
   `tel_pessoal` varchar(15) DEFAULT NULL,
   `tel_comercial` varchar(15) DEFAULT NULL,
   `tel_residencial` varchar(15) DEFAULT NULL,

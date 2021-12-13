@@ -1,0 +1,7 @@
+CREATE TABLE `categoriaestab` (
+  `id_categoria` int NOT NULL AUTO_INCREMENT,
+  `categoria` varchar(20) DEFAULT NULL,
+  PRIMARY KEY (`id_categoria`),
+  CONSTRAINT `id_cadastro_empresa` FOREIGN KEY (`id_categoria`) REFERENCES `cadastroempresa` (`id_empresa`),
+  CONSTRAINT `id_perfil_empresa` FOREIGN KEY (`id_categoria`) REFERENCES `perfilempresa` (`idperfilempresa`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci

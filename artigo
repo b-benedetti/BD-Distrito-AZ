@@ -1,5 +1,5 @@
 CREATE TABLE `artigo` (
-  `idartigo` int NOT NULL,
+  `idartigo` int NOT NULL AUTO_INCREMENT,
   `titulo_artigo` varchar(50) DEFAULT NULL,
   `categoria` varchar(20) DEFAULT NULL,
   `desenvolvimento_art` varchar(5000) DEFAULT NULL,

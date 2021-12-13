@@ -1,0 +1,8 @@
+CREATE TABLE `probplataforma` (
+  `id_prob` int NOT NULL,
+  `mensagem_prob` varchar(500) DEFAULT NULL,
+  PRIMARY KEY (`id_prob`),
+  CONSTRAINT `id_cadastro_dono` FOREIGN KEY (`id_prob`) REFERENCES `cadastrodono` (`id_dono`),
+  CONSTRAINT `id_cadastro_empresa_` FOREIGN KEY (`id_prob`) REFERENCES `cadastroempresa` (`id_empresa`),
+  CONSTRAINT `id_cadastro_pessoa` FOREIGN KEY (`id_prob`) REFERENCES `cadastropessoa` (`id_pessoa`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci

@@ -1,0 +1,7 @@
+CREATE TABLE `telefoneempresa` (
+  `id_telefone_empresa` int NOT NULL,
+  `tel_comercial_empresa` varchar(15) DEFAULT NULL,
+  `tel_secundario_empresa` varchar(15) DEFAULT NULL,
+  PRIMARY KEY (`id_telefone_empresa`),
+  CONSTRAINT `id_empresa` FOREIGN KEY (`id_telefone_empresa`) REFERENCES `cadastroempresa` (`id_empresa`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci

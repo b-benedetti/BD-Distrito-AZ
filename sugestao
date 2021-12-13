@@ -1,5 +1,5 @@
 CREATE TABLE `sugestao` (
-  `idsugestao` int NOT NULL,
+  `idsugestao` int NOT NULL AUTO_INCREMENT,
   `email_sug` varchar(100) DEFAULT NULL,
   `nome_completo` varchar(100) DEFAULT NULL,
   `celular_sug` varchar(15) DEFAULT NULL,

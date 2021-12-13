@@ -1,5 +1,5 @@
 CREATE TABLE `probplataforma` (
-  `id_prob` int NOT NULL,
+  `id_prob` int NOT NULL AUTO_INCREMENT,
   `mensagem_prob` varchar(500) DEFAULT NULL,
   PRIMARY KEY (`id_prob`),
   CONSTRAINT `id_cadastro_dono` FOREIGN KEY (`id_prob`) REFERENCES `cadastrodono` (`id_dono`),

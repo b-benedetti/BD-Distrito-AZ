@@ -1,5 +1,5 @@
 CREATE TABLE `cadastroempresa` (
-  `id_empresa` int NOT NULL AUTO_INCREMENT,
+  `id_empresa` int NOT NULL,
   `descricao_empresa` varchar(100) DEFAULT NULL,
   `razao_social` varchar(100) DEFAULT NULL,
   `nome_empresa` varchar(100) DEFAULT NULL,

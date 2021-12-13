@@ -1,0 +1,21 @@
+CREATE TABLE `cadastroempresa` (
+  `id_empresa` int NOT NULL,
+  `descricao_empresa` varchar(100) DEFAULT NULL,
+  `razao_social` varchar(100) DEFAULT NULL,
+  `nome_empresa` varchar(100) DEFAULT NULL,
+  `fotos_comercio` varchar(1000) DEFAULT NULL,
+  `responsavel` varchar(100) DEFAULT NULL,
+  `cnpj_empresa` varchar(20) DEFAULT NULL,
+  `end_emp_complemento` varchar(15) DEFAULT NULL,
+  `end_emp_bairro` varchar(50) DEFAULT NULL,
+  `end_emp_via` varchar(10) DEFAULT NULL,
+  `end_emp_cep` varchar(10) DEFAULT NULL,
+  `end_emp_num` varchar(5) DEFAULT NULL,
+  `possui_acessib` char(1) DEFAULT NULL,
+  `possui_entregas` char(1) DEFAULT NULL,
+  `inscricao_estadual` varchar(10) DEFAULT NULL,
+  `data_fundacao` varchar(10) DEFAULT NULL,
+  `senha_empresa` varchar(20) DEFAULT NULL,
+  PRIMARY KEY (`id_empresa`),
+  UNIQUE KEY `cnpj_empresa_UNIQUE` (`cnpj_empresa`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci
